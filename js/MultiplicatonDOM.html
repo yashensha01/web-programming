@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <style>
+      li {
+        list-style: none;
+      }
+    </style>
+    <title>Multiplication</title>
+  </head>
+  <body>
+    <h1></h1>
+    <ul id="table"></ul>
+    <script>
+      const number = parseInt(prompt("Enter an integer. "));
+      document.querySelector(
+        "h1"
+      ).innerText = `Multipication table of ${number}`;
+      for (let i = 1; i <= 10; i++) {
+        console.log(`${number} x ${i} = ${number * i}`);
+        const li = document.createElement("li");
+        const ul = document.querySelector("#table");
+        li.appendChild(
+          document.createTextNode(`${number} x ${i} = ${number * i}`)
+        );
+        ul.appendChild(li);
+      }
+    </script>
+  </body>
+</html>

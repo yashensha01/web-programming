@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: SF Pro Display;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.main-head {
+  color: rgb(167, 167, 167);
+  transition: 0.4s;
+}
+.main-head:hover {
+  color: white;
+  transition: 0.4s;
+}
+.head-box {
+  background-color: rgb(26, 26, 26);
+  text-align: center;
+  padding: 20px;
+}
+.container {
+  display: flex;
+  color: #000;
+  background-image: linear-gradient(to bottom ,red 50%, yellow 50%);
+  transition: 0.5s;
+}
+.container:hover {
+color: #fff; 
+background-image: linear-gradient(to top ,#a50044 50%, #004d98 50%);
+transition: 0.5s;
+}
+.left {
+  display: flex;
+  color: #000;
+  padding: 30px;
+  flex-direction: column;
+}
+.right {
+  display: flex;
+  color: #000;
+  padding: 30px;
+  flex-direction: column;
+}
